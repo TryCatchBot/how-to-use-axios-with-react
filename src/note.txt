@@ -1,0 +1,2 @@
+* I just learnt how to access the endpoint data from outside the axios 
+call by seting it to a state and access the initial value of the state
