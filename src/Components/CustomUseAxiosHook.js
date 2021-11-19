@@ -2,7 +2,7 @@ import { useAxios } from "use-axios-client";
 
 export default function App() {
   const { data, error, loading } = useAxios({
-    url: "https://jsonplaceholder.typicode.com/posts"
+    url: "https://jsonplaceholder.typicode.com/posts/1"
   });
 
   if (loading || !data) return "Loading  Data...";
@@ -12,7 +12,7 @@ export default function App() {
     <div>
       <h1>{data.title}</h1>
       <p>{data.body}</p>
-      <p>{error.message}</p>
+      {/* <p>{error.message}</p> */}
     </div>
   ) 
 }
